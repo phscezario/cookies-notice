@@ -1,0 +1,65 @@
+:root {
+    --bg-background: rgba(0, 0, 0, .7);
+    --text-color: #fff;
+    --bt-color: #fff;
+    --bt-background: #ff1616;
+}
+
+#lgpd-box {
+    position: fixed;
+    background: var(--bg-background);
+    width: 100%;
+    z-index: 9999999999;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid var(--bt-background);
+}
+#lgpd-container {
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    max-width: 1050px;
+}
+#lgpd-container div{
+    min-width: 100px;
+}
+#lgpd-container  span {
+    text-align: left;
+    line-height: 14px;
+    padding: 10px;
+    color: var(--text-color);
+    font-size: 14px;
+    display: block;
+}
+
+#lgpd-container a {
+    text-decoration: underline;
+    color: var(--link-color);
+    white-space: nowrap;
+}
+
+#lgpd-container  a#lgpd-button {
+    background: var(--bt-background);
+    align-self: normal;
+    cursor: pointer;
+    color: var(--bt-color);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: .2s;
+}
+#lgpd-container  a#lgpd-button:hover {
+    opacity: .9;
+}
+
+@media screen and (max-width: 600px) {
+    #lgpd-container  {
+        flex-direction: column;
+    }
+}
+  
